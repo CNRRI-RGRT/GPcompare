@@ -1,0 +1,53 @@
+{
+  "wheat599": {
+        "data_dir": "wheat599",
+        "task_type": "regression",
+        "traits": ["yield1", "yield2", "yield3", "yield4"],
+        "input_dim": 1279,
+        "hidden_size": [[512], [128]],
+        "output_dim": 1,
+        "batch_size": 32,
+        "genotype_dir": "wheat_genotype_1279.csv"
+  },
+  "rice439_ld0.8":{
+    "data_dir": "rice439",
+    "task_type": "regression",
+    "traits": ["PH", "GL", "GW", "GR"],
+    "input_dim": 76607,
+    "hidden_size": [[512], [128]],
+    "output_dim": 1,
+    "batch_size": 32,
+    "genotype_dir": "rice438_ld0.8_genotypes_76607.csv"
+  },
+  "tomato398": {
+        "data_dir": "tomato398",
+        "task_type": "regression",
+        "traits": ["soluble-solids", "glucose", "fructose", "1-nitro-2-phenylethane", "2-phenylethanol",
+          "isovaleraldehyde", "methylsalicylate", "phenylacetaldehyde"],
+        "input_dim": 30416,
+        "batch_size": 32,
+        "hidden_size": [[512], [128]],
+        "output_dim": 1,
+        "genotype_dir": "Tieman.Chr398.dropna98.subset.impute30416_ld0.8.csv"
+  },
+    "cotton1037": {
+        "data_dir": "cotton1037",
+        "task_type": "regression",
+        "traits": ["AY"],
+        "input_dim": 49369,
+        "batch_size": 32,
+        "hidden_size": [[512], [128]],
+        "output_dim": 1,
+        "genotype_dir": "1037_lpa.M5M8.dropna.98.chrid.ld0.8_49369.csv"
+  },
+  "maize1404":{
+    "data_dir": "maize1404",
+    "task_type": "regression",
+    "traits": ["DTS", "ELW", "ELL", "CW"],
+    "input_dim": 40482,
+    "hidden_size": [[512], [128]],
+    "output_dim": 1,
+     "batch_size": 32,
+    "genotype_dir": "cubic1404_ld0.8_40482.csv"
+  }
+}
